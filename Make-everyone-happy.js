@@ -16,3 +16,6 @@ Examples:
   smile("Never be sad =[")  // should return "Never be sad =]"
   smile("Change this `=(` and this `:[`")  // should return "Change this `=)` and this `:]`"
 */
+
+
+// Solution
