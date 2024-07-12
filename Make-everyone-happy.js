@@ -19,3 +19,15 @@ Examples:
 
 
 // Solution
+
+const smile = text =>
+  text.split('')
+  .map((e, i, a) => e === '(' && ':;=-~'.includes(a[i-1]) ? ')' 
+                  : e === '[' && ':;=-~'.includes(a[i-1]) ? ']' 
+                  : e)
+  .join('');
+
+//1. Split the string into an array of characters.
+//2. Map through the array--if the array is a sad face with either 
+//    '(' or '[', replace the bracket with the opposite bracket.
+//3. Return the resulting array, but as one joined string.
