@@ -33,3 +33,5 @@ const smile = text =>
 //3. Return the resulting array, but as one joined string.
 
 // or
+
+const smile = s => s.replace(/([:;=][-~]?)([\(\[])/g, (_,f,m) => f+(m=='('?')':']'))
